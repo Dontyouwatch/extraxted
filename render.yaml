@@ -1,5 +1,5 @@
 services:
-  worker:
-    build:
-      dockerfile: Dockerfile
+  - name: telegram-bot
+    type: worker
+    env: docker
     startCommand: python3 main.py
