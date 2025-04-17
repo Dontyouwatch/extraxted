@@ -68,3 +68,7 @@ if __name__ == "__main__" :
     
     asyncio.get_event_loop().run_until_complete(main())
     LOGGER.info(f"<---Bot Stopped-->")
+
+# Set port environment variable for Render
+port = int(os.getenv("PORT", 8080))
+print(f"Server is running on port {port}")
