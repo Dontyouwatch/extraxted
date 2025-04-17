@@ -1,0 +1,5 @@
+services:
+  worker:
+    build:
+      dockerfile: Dockerfile
+    startCommand: python3 main.py
